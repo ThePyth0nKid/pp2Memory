@@ -11,11 +11,6 @@ function flipCard() {
 
     this.classList.add('flip');
 
-    if (!gameStarted) {
-        startGame();
-        gameStarted = true;
-    }
-
     if (!hasFlippedCard) {
         // first click
         hasFlippedCard = true;
