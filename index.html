@@ -16,11 +16,24 @@
 </head>
 
 <body>
+    <header>
+        <h1 class="heading"><img src="assets/images/pp2-logo-heading.png" alt="logo"></h1>
+        <p>Welcome to the dystopian world.</p>
+    </header>
+
+    <section class="game-controls">
+        <button id="startButton">Spiel Starten</button>
+        <div class="game-status">
+            <span id="timer">60s</span>
+            <span id="lives">Leben: 5</span>
+        </div>
+    </section>
+
     <!-- Memory game section -->
     <section class="memory-game">
         <!-- Memory cards: each pair of divs represents a matching pair -->
         <div class="memory-card" data-framework="aurelia">
-            <img class="front-face" src="../img/optimizedCrad1.png" alt="Aurelia" />
+            <img class="front-face" src="../img/optimizedCrad1.svg" alt="Aurelia" />
             <img class="back-face" src="../img/optimizedCradBackface.png" alt="JS Badge" />
         </div>
         <div class="memory-card" data-framework="aurelia">
