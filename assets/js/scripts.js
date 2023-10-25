@@ -1,5 +1,7 @@
+// Select all memory cards from the DOM
 const cards = document.querySelectorAll('.memory-card');
 
+// Initialize game state variables
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;

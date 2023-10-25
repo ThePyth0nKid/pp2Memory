@@ -20,11 +20,9 @@ Cyberpunk Memory is an interactive memory game set in a dystopian cyberpunk worl
 This website is made up of the following sections:
 
 1. Header
-2. Story-area
-3. Game-area
-4.
-5. Ask us
-6. Footer with social medid icons
+2. Game-area
+3. Game controls
+4. Story/Chatbot
 
 ## Header
 
