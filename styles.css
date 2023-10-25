@@ -37,52 +37,6 @@ body {
     background: url("assets/images/opti-pp2-backround.png") no-repeat center center/cover;
 }
 
-/* Styles for the game controls */
-.game-controls {
-    max-height: 110px;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 90px;
-    /* Adjust this value as needed */
-    gap: 20px;
-    /* Spacing between elements */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#startButton {
-    padding: 10px 20px;;
-    background-color: #fe57ba;
-    box-shadow: 0 2px 2px #000000;
-    border: none;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#startButton:hover {
-    background-color: #fe57ba;
-}
-
-.game-status {
-    display: flex;
-    gap: 10px;
-    font-size: 1.2em;
-}
-
-#timer,
-#lives {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #FFF;
-}
-
 .memory-game {
     width: 280px;
     height: 280px;
@@ -125,4 +79,65 @@ body {
 
 .front-face {
     transform: rotateY(180deg);
+}
+
+/* Styles for the game controls */
+.game-controls {
+    max-height: 40px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    /* Adjust this value as needed */
+    gap: 20px;
+    /* Spacing between elements */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#startButton {
+    padding: 10px 20px;;
+    background-color: #fe57ba;
+    max-height: 40px;
+    box-shadow: 0 2px 2px #000000;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover {
+    background-color: #fe57ba;
+}
+
+.game-status {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+#timer,
+#lives {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+/* Media query: tablets and larger (768px and up) */
+
+@media screen and (min-width: 768px) {
+    .memory-game {
+        width: 480px;
+        height: 480px;
+    }
+
+    .product-image {
+        width: 90vw;
+        height: 90vw;
+    }
 }
