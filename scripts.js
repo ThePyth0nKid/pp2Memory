@@ -105,7 +105,7 @@ function startTimer() {
 
 function gameOver() {
     clearInterval(timerInterval);
-    alert('Spiel vorbei!');
+    alert('Game Over, stupid Human! HAHAHAHA!');
 }
 
 function updateLivesDisplay() {

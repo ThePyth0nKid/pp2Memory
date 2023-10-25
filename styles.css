@@ -38,17 +38,23 @@ body {
 
 /* Styles for the game controls */
 .game-controls {
+    max-height: 110px;
+    border: 2px solid lime;
     display: flex;
+    position: absolute;
+    bottom: 0;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     /* Adjust this value as needed */
     gap: 20px;
     /* Spacing between elements */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #startButton {
-    padding: 10px 20px;
+    padding: 10px 20px;;
     background-color: #007BFF;
     border: none;
     border-radius: 5px;
@@ -101,8 +107,8 @@ body {
 }
 
 .memory-game {
-    width: 640px;
-    height: 640px;
+    width: 280px;
+    height: 280px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
