@@ -111,3 +111,7 @@ function gameOver() {
 function updateLivesDisplay() {
     livesDisplay.textContent = `Leben: ${lives}`;
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    shuffle();
+});

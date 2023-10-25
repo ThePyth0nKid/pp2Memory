@@ -41,8 +41,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px; /* Adjust this value as needed */
-    gap: 20px; /* Spacing between elements */
+    margin-bottom: 70px;
+    /* Adjust this value as needed */
+    gap: 20px;
+    /* Spacing between elements */
 }
 
 #startButton {
@@ -66,11 +68,36 @@ body {
     font-size: 1.2em;
 }
 
-#timer, #lives {
+#timer,
+#lives {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
     border-radius: 5px;
     color: #FFF;
+}
+
+/* typing animation */
+.typing-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* oder einen anderen gewünschten Wert */
+    margin-top: 300px;
+}
+
+.typing-text {
+    color: white;
+    font-size: 1.5em;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    /* Cursor-Effekt */
+    white-space: nowrap;
+    width: 0;
+    animation: typing 4s steps(40, end),
+        /* Geschwindigkeit und Schritte der Animation */
+        blink-caret .5s step-end infinite alternate;
+    /* Cursor Blink-Effekt */
 }
 
 .memory-game {
@@ -108,7 +135,7 @@ body {
     height: 100%;
     position: absolute;
     border-radius: 5px;
-    background: fffff;
+    background: #000000;
     backface-visibility: hidden;
 }
 
