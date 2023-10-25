@@ -86,10 +86,10 @@ body {
     max-height: 40px;
     display: flex;
     position: absolute;
-    bottom: 0;
+    top: 0;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-top: 440px;
     /* Adjust this value as needed */
     gap: 20px;
     /* Spacing between elements */
@@ -135,9 +135,18 @@ body {
         width: 480px;
         height: 480px;
     }
+    .game-controls {
+        margin-top: 670px;
+    }
+}
 
-    .product-image {
-        width: 90vw;
-        height: 90vw;
+/* Media query: laptops (992px and up) */
+@media screen and (min-width: 992px) {
+    .memory-game {
+        width: 580px;
+        height: 580px;
+    }
+    .game-controls {
+        margin-top: 770px;
     }
 }
