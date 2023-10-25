@@ -28,21 +28,19 @@ This website is made up of the following sections:
 
 ![Header-image]()
 
-## Heading
+## Game-area
 
-![Hero-image]()
+![Game-area-image]()
 
-## Story-Area
+## Game controls
 
-![Why-Fuut-image]()
+![Game controls-image]()
 
-## Our Products
+## Story/Chatbot
 
-![Products-image]()
+![Story/Chatbot-image]()
 
-## Ask Us
 
-Have queries or wish to learn more? The "Ask Us" section provides a platform for visitors to reach out and get their questions answered. Dive deeper into the world of Fuut and join us in this culinary revolution.
 
 ![Ask-image](assets/images/ask.png)
 
@@ -60,17 +58,19 @@ Social media links in the footer which are linked to the homepage of Facebook, T
 
 Considering the core UX principles, I began by contemplating the strategy for this website, defining the target users and the features/technologies they would desire.
 
-Fuut's target users are:
+Target Users for Cyberpunk Memory:
 
-- Aged 25-50
-- Technology enthusiasts and early adopters
-- Individuals interested in sustainable and automated food solutions
-- Households or businesses looking to modernize their culinary process
+- Aged 18-99
+- Enthusiasts of technology and early adopters
+- Individuals with a keen interest in sustainable and automated gaming experiences
+- Gamers and puzzle enthusiasts looking for a unique challenge
 
-What these users would be looking for:
+Key Expectations of the Users:
 
-- Clear, concise, easy-to-find information
-- Beautiful photos that provide inspiration
+- Clarity and Simplicity: Users should easily find their way around the game interface.
+- Immersive Visuals: Engaging cyberpunk-themed graphics that draw players into the dystopian world.
+- Challenging Gameplay: Memory puzzles that provide both entertainment and mental stimulation.
+
 
 ### **Structure**
 
@@ -87,7 +87,7 @@ I have used several technologies that have enabled this design to work:
 - [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
   - Used to style all the web content across the project.
 - [JavaScript](https://www.javascript.com/)
-  - Used for the hover effect of the images.
+  - 
 - [Google Fonts](https://fonts.google.com/)
   - Used to obtain the fonts linked in the header, fonts used were Roboto Mono and Oswald
 - [Font Awesome](https://fontawesome.com/)
@@ -173,6 +173,8 @@ Cloning your repository will allow you to download a local version of the reposi
 
 The following websites/articles were used for research and guidance:
 
+- [Learn Vanilla Javascript: Memory Game Tutorial ] (https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw)
+
 - [Love Running walkthrough project, that always accompanied me on my first project] (<https://learn.codeinstitute.net>)
 
 - [Troubleshooting] (<https://chat.openai.com/>)
@@ -183,8 +185,5 @@ The following websites/articles were used for research and guidance:
 
 ## Acknowledgements
 
-I would like to thank my course mentor  Harry Dhillon for his support and guidance throughout the course of the project and my fellow students Nathan and Denis Hardi for their support & feedback
-Then I would like to say a special thank you to Adam Kastell, who always motivated me and helped me get into the course and ultimately into this project.
-Finally, I would like to thank everyone who took the time to look at the project. It was my first own project and I am very happy that I took this path. The support and friendliness I have experienced so far on my path to becoming a full-stack software developer is great and wonderful. Thanks
 
 ---

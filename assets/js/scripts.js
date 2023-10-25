@@ -25,6 +25,7 @@ function flipCard() {
     checkForMatch();
 }
 
+// Check if two flipped cards match
 function checkForMatch() {
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
     isMatch ? disableCards() : unflipCards();
