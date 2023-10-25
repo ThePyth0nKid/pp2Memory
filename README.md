@@ -127,9 +127,9 @@ I validated both my HTML and CSS. At first I had a few errors but they were easy
 
 So that in the end there were no more errors.
 
-![HTML](assets/images/html-check-finsh.png)
+![HTML]()
 
-![css](assets/images/css-check-finsh.png)
+![css]()
 
 ---
 
