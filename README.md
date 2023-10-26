@@ -1,7 +1,7 @@
 
 [Visit the Cyberpunk Memory website here](https://thepyth0nkid.github.io/pp2Memory/)
 
-![Desktop View]()
+![Multi-mockup view](assets/doc/techsiniMemory.png)
 
 About the Project
 
@@ -96,7 +96,7 @@ First of all, I tested all the functions myself. Then I validated and tested eve
 
 Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features.
 
-![Lighthouse testing](assets/images/screenshot-light.png)
+![Lighthouse testing]()
 
 ### **HTML and CSS Validation**
 
