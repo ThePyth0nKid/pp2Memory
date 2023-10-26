@@ -1,9 +1,11 @@
+/* General styles to reset default margins and paddings, and set consistent box-sizing */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Fixed header styling with shadow and background image */
 header {
     background: url("assets/images/hedingPp2.svg") no-repeat center center/cover;
     background-color: #fe57ba;
@@ -19,6 +21,7 @@ header {
     text-align: center;
 }
 
+/* Styling for h1 images inside the header */
 h1.heading img {
     width: 100%;
     height: 100%;
@@ -26,17 +29,20 @@ h1.heading img {
     margin: 0 auto;
 }
 
+/* Main content styling, positioned below the header */
 main {
     flex: 1 0 auto;
     margin-top: 37px;
 }
 
+/* Body styling with a background image */
 body {
     height: 100vh;
     display: flex;
     background: url("assets/images/opti-pp2-backround.png") no-repeat center center/cover;
 }
 
+/* Styles for the memory game grid */
 .memory-game {
     width: 280px;
     height: 280px;
@@ -47,6 +53,7 @@ body {
     perspective: 1000px;
 }
 
+/* Styles for individual memory cards, including flip animations */
 .memory-card {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
@@ -66,6 +73,7 @@ body {
     transform: rotateY(180deg);
 }
 
+/* Styles for the front and back faces of the memory cards */
 .front-face,
 .back-face {
     width: 100%;
@@ -81,7 +89,7 @@ body {
     transform: rotateY(180deg);
 }
 
-/* Styles for the game controls */
+/* Styles for game controls, positioned at the bottom */
 .game-controls {
     max-height: 40px;
     display: flex;
@@ -90,9 +98,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 440px;
-    /* Adjust this value as needed */
     gap: 20px;
-    /* Spacing between elements */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -110,10 +116,12 @@ body {
     transition: background-color 0.3s;
 }
 
+/* Start button styling, including hover effect */
 #startButton:hover {
     background-color: #fe57ba;
 }
 
+/* Display styles for the game status (timer and lives) */
 .game-status {
     display: flex;
     gap: 10px;

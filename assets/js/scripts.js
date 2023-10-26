@@ -82,7 +82,7 @@ const timerDisplay = document.getElementById('timer');
 const livesDisplay = document.getElementById('lives');
 
 let timeLeft = 60;
-let lives = 10;
+let lives = 5;
 let timerInterval;
 
 startButton.addEventListener('click', startGame);
@@ -91,7 +91,7 @@ function startGame() {
     gameStarted = true;
     cards.forEach(card => card.addEventListener('click', flipCard));
     clearInterval(timerInterval);
-    lives = 10;
+    lives = 5;
     timeLeft = 60;
     cards.forEach(card => card.classList.remove('flip'));
     cards.forEach(card => card.addEventListener('click', flipCard));
@@ -116,7 +116,7 @@ function startTimer() {
 
 function gameOver() {
     clearInterval(timerInterval);
-    alert('Game Over, stupid Human! HAHAHAHA!');
+    alert('Game Over, stupid human! HAHAHAHA!');
 }
 
 function updateLivesDisplay() {
@@ -127,12 +127,12 @@ document.addEventListener('DOMContentLoaded', function () {
     shuffle();
 });
 
-// In der Funktion disableCards, erhöhe den Zähler und prüfe auf Gewinn
+// Function “disableCards”, increase the counter and check for profit
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
-    matchedPairs++;  // Erhöhe den Zähler
-    if (matchedPairs === cards.length / 2) {  // Wenn alle Kartenpaare gefunden wurden
+    matchedPairs++;
+    if (matchedPairs === cards.length / 2) {
         gameWon();
     }
     resetBoard();
