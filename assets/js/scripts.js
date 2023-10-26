@@ -10,7 +10,7 @@ let matchedPairs = 0;
 
 function flipCard() {
     if (!gameStarted) {
-        alert('Kindly press START to initiate the game. Your fate awaits!');
+        alert("Kindly press 'START' to initiate the game. Your fate awaits! If you're wondering why you're here, please ask the chatbot, Kia, for answers.");
         return;
     }
     if (lockBoard) return;
@@ -116,7 +116,7 @@ function startTimer() {
 
 function gameOver() {
     clearInterval(timerInterval);
-    alert('Game Over, stupid human! HAHAHAHA!');
+    alert('Game Over, stupid human! HAHAHAHA! If you wish to learn more about the story, please ask the chatbot, Kia.');
 }
 
 function updateLivesDisplay() {

@@ -26,6 +26,8 @@ This website is made up of the following sections:
 
 ## Header
 
+I've kept the header simple, featuring only a background image without any added functionalities. I created the initial background image using Dalle-3 and later enhanced it with Photoshop 2024. Finally, to optimize performance and achieve the visual look you see now, I converted the image to an SVG format.
+
 ![Header-image]()
 
 ## Game-area
@@ -54,7 +56,7 @@ Social media links in the footer which are linked to the homepage of Facebook, T
 
 ---
 
-### **Strategy**
+### Strategy
 
 Considering the core UX principles, I began by contemplating the strategy for this website, defining the target users and the features/technologies they would desire.
 
@@ -72,7 +74,7 @@ Key Expectations of the Users:
 - Challenging Gameplay: Memory puzzles that provide both entertainment and mental stimulation.
 
 
-### **Structure**
+### Structure
 
 This is a single-page website to allow for desired flow; the navigation bar at the top allows for users to easily move to whatever section of the site they are interested in or they can simply scroll through the information as it is displayed.
 
