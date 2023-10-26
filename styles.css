@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+/* Body styling with a background image */
+body {
+    height: 100vh;
+    display: flex;
+    background: url("assets/images/opti-pp2-backround.png") no-repeat center center/cover;
+    font-family: sans-serif;
+}
+
 /* Fixed header styling with shadow and background image */
 header {
     background: url("assets/images/hedingPp2.svg") no-repeat center center/cover;
@@ -33,13 +41,6 @@ h1.heading img {
 main {
     flex: 1 0 auto;
     margin-top: 37px;
-}
-
-/* Body styling with a background image */
-body {
-    height: 100vh;
-    display: flex;
-    background: url("assets/images/opti-pp2-backround.png") no-repeat center center/cover;
 }
 
 /* Styles for the memory game grid */
