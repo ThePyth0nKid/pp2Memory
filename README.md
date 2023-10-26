@@ -28,11 +28,11 @@ This website is made up of the following sections:
 
 I've kept the header simple, featuring only a background image without any added functionalities. I created the initial background image using Dalle-3 and later enhanced it with Photoshop 2024. Finally, to optimize performance and achieve the visual look you see now, I converted the image to an SVG format.
 
-![Header-image]()
+![Header-image](assets/doc/header.png)
 
 ## Game-area
 
-![Game-area-image]()
+![Game-area-image](assets/doc/gameAreaFinal.png)
 
 ## Game controls
 
