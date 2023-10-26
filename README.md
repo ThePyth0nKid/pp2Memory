@@ -13,8 +13,6 @@ Cyberpunk Memory is an interactive memory game set in a dystopian cyberpunk worl
 
 - ## Challenge your memory with a variety of cyberpunk-inspired cards
 
-- ## Uncover the story of a world on the edge of chaos
-
 - ## Test your skills and save the world, one card pair at a time
 
 This website is made up of the following sections:
@@ -22,35 +20,22 @@ This website is made up of the following sections:
 1. Header
 2. Game-area
 3. Game controls
-4. Story/Chatbot
 
 ## Header
 
 I've kept the header simple, featuring only a background image without any added functionalities. I created the initial background image using Dalle-3 and later enhanced it with Photoshop 2024. Finally, to optimize performance and achieve the visual look you see now, I converted the image to an SVG format.
 
-![Header-image](assets/doc/header.png)
+![Header-image-final](assets/doc/header.png)
 
 ## Game-area
+
+Within the game area, you'll encounter a 4x3 memory card game. It's a straightforward game where the objective is to find matching card pairs. By clicking on the start button, the game commences and a 60-second timer begins its countdown. A card will flip over when clicked. Clicking another card will reveal that card as well. If both cards match, they remain face up. Once all the cards have been matched, you win the game. However, if the second card selected doesn't match the first, you'll lose one of your five lives. Should your lives count reach zero or the timer runs out, it's game over. Additionally, when the game is either won or lost, an alert is triggered to notify the player.
 
 ![Game-area-image](assets/doc/gameAreaFinal.png)
 
 ## Game controls
 
 ![Game controls-image]()
-
-## Story/Chatbot
-
-![Story/Chatbot-image]()
-
-
-
-![Ask-image](assets/images/ask.png)
-
-## Footer with social media icons
-
-Social media links in the footer which are linked to the homepage of Facebook, Twitter, Instagram and TikTok as Fuut does not have its own social media profile. Just like the header, structured, minimal, responsive, perfect for my first website
-
-![Footer-image](assets/images/footer.png)
 
 ## UX
 
@@ -89,19 +74,13 @@ I have used several technologies that have enabled this design to work:
 - [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
   - Used to style all the web content across the project.
 - [JavaScript](https://www.javascript.com/)
-  - 
-- [Google Fonts](https://fonts.google.com/)
-  - Used to obtain the fonts linked in the header, fonts used were Roboto Mono and Oswald
-- [Font Awesome](https://fontawesome.com/)
-  - Used to obtain the social media icons used in the footer.
+  - Used to make the website fuctional
 - [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
   - Used as a primary method of fixing spacing issues, finding bugs, and testing responsiveness across the project.
 - [GitHub](https://github.com/)
   - Used to store code for the project after being pushed.
 - [Git](https://git-scm.com/)
   - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
-- [Gitpod](https://www.gitpod.io/)
-  - Used as the development environment.
 - [Dall-E3](https://chat.openai.com/)
   - for image creation and inspiration
 - [ChatGPT4](https://chat.openai.com/)
