@@ -6,8 +6,13 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 let gameStarted = false;
+let matchedPairs = 0;
 
 function flipCard() {
+    if (!gameStarted) {
+        alert('Bitte klicken Sie auf "Start", um das Spiel zu beginnen!');
+        return;
+    }
     if (lockBoard) return;
     if (this === firstCard) return;
 
@@ -70,20 +75,22 @@ function shuffle() {
     });
 }
 
-cards.forEach(card => card.addEventListener('click', flipCard));
 
 const startButton = document.getElementById('startButton');
 const timerDisplay = document.getElementById('timer');
 const livesDisplay = document.getElementById('lives');
 
 let timeLeft = 60;
-let lives = 5;
+let lives = 10;
 let timerInterval;
 
 startButton.addEventListener('click', startGame);
 
 function startGame() {
-    lives = 5;
+    gameStarted = true;
+    cards.forEach(card => card.addEventListener('click', flipCard));
+    clearInterval(timerInterval);
+    lives = 10;
     timeLeft = 60;
     cards.forEach(card => card.classList.remove('flip'));
     cards.forEach(card => card.addEventListener('click', flipCard));
@@ -112,9 +119,25 @@ function gameOver() {
 }
 
 function updateLivesDisplay() {
-    livesDisplay.textContent = `Leben: ${lives}`;
+    livesDisplay.textContent = `Life: ${lives}`;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     shuffle();
 });
+
+// In der Funktion disableCards, erhöhe den Zähler und prüfe auf Gewinn
+function disableCards() {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+    matchedPairs++;  // Erhöhe den Zähler
+    if (matchedPairs === cards.length / 2) {  // Wenn alle Kartenpaare gefunden wurden
+        gameWon();
+    }
+    resetBoard();
+}
+
+function gameWon() {
+    clearInterval(timerInterval);
+    alert('Herzlichen Glückwunsch! Du hast gewonnen!');
+}
