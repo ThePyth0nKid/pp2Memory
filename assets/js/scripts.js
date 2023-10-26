@@ -10,7 +10,7 @@ let matchedPairs = 0;
 
 function flipCard() {
     if (!gameStarted) {
-        alert('Bitte klicken Sie auf "Start", um das Spiel zu beginnen!');
+        alert('Kindly press 'START' to initiate the game. Your fate awaits!');
         return;
     }
     if (lockBoard) return;
