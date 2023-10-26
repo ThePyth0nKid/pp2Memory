@@ -62,6 +62,7 @@ function unflipCards() {
     }, 1500);
 }
 
+cards.forEach(card => card.addEventListener('click', flipCard));
 
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
@@ -139,5 +140,5 @@ function disableCards() {
 
 function gameWon() {
     clearInterval(timerInterval);
-    alert('Herzlichen Glückwunsch! Du hast gewonnen!');
+    alert('Your save the World!');
 }
