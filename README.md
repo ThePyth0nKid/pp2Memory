@@ -94,7 +94,7 @@ I have used several technologies that have enabled this design to work:
 
 ## Testing
 
-### **User Stories**
+### User Stories**
 
 I recently shared a preliminary version of "Cyberpunk Memory" in our Slack channel and received invaluable feedback from a fellow student. Their insights were comprehensive, covering a range of improvements and suggestions.
 
@@ -102,13 +102,13 @@ I recently shared a preliminary version of "Cyberpunk Memory" in our Slack chann
 
 First of all, I tested all the functions myself. Then I validated and tested everything as standard using all the means listed.
 
-### **Lighthouse**
+### Lighthouse**
 
 Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features.
 
 ![Lighthouse testing](assets/doc/lightHouse.png)
 
-### **HTML, CSS and JavaSkript Validation**
+### HTML and CSS Validation**
 
 I validated both my HTML and CSS. At first I had a few errors but they were easy to find and fix
 
@@ -119,6 +119,31 @@ So that in the end there were no more errors.
 ![HTML](assets/doc/htmlFinal.png)
 
 ![css](assets/doc/cssVali.png)
+
+![JavaSkript]()
+
+### JavaSkript
+
+#### JSHint Validation Summary
+
+Our JavaScript code for the memory card game has been rigorously validated using JSHint, a popular static analysis tool for JavaScript. The primary aim of this validation was to ensure code quality, adherence to coding standards, and to identify potential errors or code smells.
+
+Key Insights from JSHint Validation
+
+![JSHint](assets/doc/javaWarnings.png)
+
+Use of ES6 Features: The validation process identified 26 warnings, all related to the usage of ES6 (ECMAScript 2015) syntax and features. These warnings are not indicative of code problems but reflect the modern JavaScript standards we've adopted. Our codebase leverages ES6 features such as const and let for variable declarations, arrow functions, template literals, and other advanced functionalities. This approach aligns with contemporary JavaScript practices, offering enhanced readability, efficiency, and scope management.
+
+![JSHintMetrics](assets/doc/metricsJava.png)
+
+- Total Number of Functions: There are 21 functions in the file, showcasing a modular approach to our game logic. This modularity aids in maintaining and scaling the code.
+
+- Function Signatures: The largest function signature takes 2 arguments, while the median number of arguments across all functions is 0. This indicates a predominance of functions with specific, targeted responsibilities, reducing the likelihood of side-effects and enhancing testability.
+
+- Function Size and Complexity:
+  - The largest function contains 15 statements, implying a comprehensive implementation of a particular feature. However, the median      number of statements per function is just 2, highlighting that most functions are concise and focused.
+  - The most complex function has a cyclomatic complexity value of 6, which is within a reasonable range for JavaScript functions, ensuring    maintainability and readability. The median complexity value is 1, reflecting the straightforward nature of most functions.
+
 
 ---
 
