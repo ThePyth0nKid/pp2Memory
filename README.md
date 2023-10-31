@@ -1,3 +1,4 @@
+# Cyberpunk Memory
 
 [Visit the Cyberpunk Memory website here](https://thepyth0nkid.github.io/pp2Memory/)
 
@@ -34,6 +35,7 @@ Within the game area, you'll encounter a 4x3 memory card game. It's a straightfo
 ![Game-area-image](assets/doc/gameAreaFinal.png)
 
 ## Game controls
+
 A well-defined game control area that includes a Start button and a display for critical game elements. Here’s an overview:
 
 - Start Button: Initiate your game with a simple click on the Start button. This action triggers the beginning of the gameplay.
@@ -41,8 +43,6 @@ A well-defined game control area that includes a Start button and a display for 
 - Life Indicator: Players begin the game with five lives. Every time you flip over two cards that don't match, you lose one life. The game is also lost if your life count drops to zero.
 
 ![Game controls-image](assets/doc/gameControls.png)
-
-## UX
 
 ---
 
@@ -60,7 +60,6 @@ Key Expectations of the Users:
 - Clarity and Simplicity: Users should easily find their way around the game interface.
 - Immersive Visuals: Engaging cyberpunk-themed graphics that draw players into the dystopian world.
 - Challenging Gameplay: Memory puzzles that provide both entertainment and mental stimulation.
-
 
 ### Structure
 
@@ -88,6 +87,8 @@ I have used several technologies that have enabled this design to work:
   - for image creation and inspiration
 - [ChatGPT4](https://chat.openai.com/)
   - for text, inspiration and problem solving
+- [Youtube] (https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw)
+  - for basic structure of the memory game
   
 ---
 
@@ -111,13 +112,11 @@ Lighthouse is a feature of Google Chrome developer tools and is used to assess t
 
 I validated both my HTML and CSS. At first I had a few errors but they were easy to find and fix
 
-![HTML Error1](assets/images/html-check-problems1.png)
-
-![HTML Error2](assets/images/html-check-problems2.png)
+![HTML Error1](assets/doc/htmlErrors.png)
 
 So that in the end there were no more errors.
 
-![HTML]()
+![HTML](assets/doc/htmlFinal.png)
 
 ![css]()
 
@@ -175,5 +174,6 @@ The following websites/articles were used for research and guidance:
 
 ## Acknowledgements
 
+This project has been a delightful experience for me, and working with JavaScript to create impressive visuals was incredibly enjoyable and has left me eager for more. I would also like to extend my thanks to Code Sketch for their tutorial on JavaScript memory management, which was extremely helpful. Additionally, my gratitude goes to the Code Institute for their excellent educational materials and superb support. Finally, I want to thank all my fellow students for every piece of advice and for the great conversations.
 
 ---
