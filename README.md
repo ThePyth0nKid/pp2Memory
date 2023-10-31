@@ -120,8 +120,6 @@ So that in the end there were no more errors.
 
 ![css](assets/doc/cssVali.png)
 
-![JavaSkript]()
-
 ### JavaSkript
 
 #### JSHint Validation Summary
