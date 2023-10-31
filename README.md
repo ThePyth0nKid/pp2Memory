@@ -35,7 +35,7 @@ Within the game area, you'll encounter a 4x3 memory card game. It's a straightfo
 
 ## Game controls
 
-![Game controls-image]()
+![Game controls-image](assets/doc/gameControls.png)
 
 ## UX
 
@@ -48,8 +48,6 @@ Considering the core UX principles, I began by contemplating the strategy for th
 Target Users for Cyberpunk Memory:
 
 - Aged 18-99
-- Enthusiasts of technology and early adopters
-- Individuals with a keen interest in sustainable and automated gaming experiences
 - Gamers and puzzle enthusiasts looking for a unique challenge
 
 Key Expectations of the Users:
