@@ -110,7 +110,7 @@ function startGame() {
 
 // Function to start the game timer
 function startTimer() {
-    timerInterval = setInterval(function() {
+    timerInterval = setInterval(function () {
         timeLeft--;
         timerDisplay.textContent = `${timeLeft}s`;
 

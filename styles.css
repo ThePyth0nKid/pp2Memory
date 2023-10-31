@@ -105,7 +105,8 @@ main {
 }
 
 #startButton {
-    padding: 10px 20px;;
+    padding: 10px 20px;
+    ;
     background-color: #fe57ba;
     max-height: 40px;
     box-shadow: 0 2px 2px #000000;
@@ -144,6 +145,7 @@ main {
         width: 480px;
         height: 480px;
     }
+
     .game-controls {
         margin-top: 670px;
     }
@@ -155,10 +157,12 @@ main {
         width: 580px;
         height: 580px;
     }
+
     .game-controls {
         margin-top: 770px;
     }
+
     header {
-        min-height:110px;
+        min-height: 110px;
     }
 }

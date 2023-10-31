@@ -40,7 +40,6 @@ A well-defined game control area that includes a Start button and a display for 
 - Timer Display: A 60-second countdown is prominently shown. The game's challenge is to complete your task within this time frame. If the timer runs out, the game ends, and it's considered a loss.
 - Life Indicator: Players begin the game with five lives. Every time you flip over two cards that don't match, you lose one life. The game is also lost if your life count drops to zero.
 
-
 ![Game controls-image](assets/doc/gameControls.png)
 
 ## UX
@@ -93,6 +92,12 @@ I have used several technologies that have enabled this design to work:
 ---
 
 ## Testing
+
+### **User Stories**
+
+I recently shared a preliminary version of "Cyberpunk Memory" in our Slack channel and received invaluable feedback from a fellow student. Their insights were comprehensive, covering a range of improvements and suggestions.
+
+![Slack massage](assets/images/html-check-problems1.png)
 
 First of all, I tested all the functions myself. Then I validated and tested everything as standard using all the means listed.
 
