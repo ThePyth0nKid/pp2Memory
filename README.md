@@ -97,7 +97,7 @@ I have used several technologies that have enabled this design to work:
 
 I recently shared a preliminary version of "Cyberpunk Memory" in our Slack channel and received invaluable feedback from a fellow student. Their insights were comprehensive, covering a range of improvements and suggestions.
 
-![Slack massage](assets/images/html-check-problems1.png)
+![Slack massage](assets/doc/slackMessage.png)
 
 First of all, I tested all the functions myself. Then I validated and tested everything as standard using all the means listed.
 
