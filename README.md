@@ -34,6 +34,12 @@ Within the game area, you'll encounter a 4x3 memory card game. It's a straightfo
 ![Game-area-image](assets/doc/gameAreaFinal.png)
 
 ## Game controls
+A well-defined game control area that includes a Start button and a display for critical game elements. Here’s an overview:
+
+- Start Button: Initiate your game with a simple click on the Start button. This action triggers the beginning of the gameplay.
+- Timer Display: A 60-second countdown is prominently shown. The game's challenge is to complete your task within this time frame. If the timer runs out, the game ends, and it's considered a loss.
+- Life Indicator: Players begin the game with five lives. Every time you flip over two cards that don't match, you lose one life. The game is also lost if your life count drops to zero.
+
 
 ![Game controls-image](assets/doc/gameControls.png)
 
