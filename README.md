@@ -108,7 +108,7 @@ Lighthouse is a feature of Google Chrome developer tools and is used to assess t
 
 ![Lighthouse testing](assets/doc/lightHouse.png)
 
-### **HTML and CSS Validation**
+### **HTML, CSS and JavaSkript Validation**
 
 I validated both my HTML and CSS. At first I had a few errors but they were easy to find and fix
 
@@ -118,7 +118,7 @@ So that in the end there were no more errors.
 
 ![HTML](assets/doc/htmlFinal.png)
 
-![css]()
+![css](assets/doc/cssVali.png)
 
 ---
 
