@@ -105,7 +105,7 @@ First of all, I tested all the functions myself. Then I validated and tested eve
 
 Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features.
 
-![Lighthouse testing]()
+![Lighthouse testing](assets/doc/lightHouse.png)
 
 ### **HTML and CSS Validation**
 
