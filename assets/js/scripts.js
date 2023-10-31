@@ -1,6 +1,15 @@
 // Select all memory cards from the DOM
 const cards = document.querySelectorAll('.memory-card');
 
+// Game control elements
+const startButton = document.getElementById('startButton');
+const timerDisplay = document.getElementById('timer');
+const livesDisplay = document.getElementById('lives');
+
+let timeLeft = 60;
+let lives = 5;
+let timerInterval;
+
 // Initialize game state variables
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -15,21 +24,17 @@ function flipCard() {
         alert("Kindly press 'START' to initiate the game. Your fate awaits!");
         return;
     }
-
     // Ignore click if board is locked or the same card is clicked
     if (lockBoard) return;
     if (this === firstCard) return;
-
     // Add flip class to the clicked card
     this.classList.add('flip');
-
     if (!hasFlippedCard) {
         // first click
         hasFlippedCard = true;
         firstCard = this;
         return;
     }
-
     // second click
     secondCard = this;
     checkForMatch();
@@ -43,38 +48,42 @@ function checkForMatch() {
 
 // Function to handle matched cards
 function disableCards() {
+    // Increase match counter and check for win
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
     resetBoard();
 }
 
+// Function to unflip cards if they don't match
 function unflipCards() {
     lockBoard = true;
 
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
-
+        // Decrement lives on incorrect match
         if (lives > 0) {
             lives--;
         }
         updateLivesDisplay();
-
         if (lives === 0) {
             gameOver();
         }
-
+        // End game if out of lives
         resetBoard();
     }, 1500);
 }
 
+// Add flip event listener to each card
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+// Function to reset the board state
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
 
+// Function to shuffle the cards
 function shuffle() {
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 12);
@@ -82,17 +91,10 @@ function shuffle() {
     });
 }
 
-
-const startButton = document.getElementById('startButton');
-const timerDisplay = document.getElementById('timer');
-const livesDisplay = document.getElementById('lives');
-
-let timeLeft = 60;
-let lives = 5;
-let timerInterval;
-
+// Event listener to start the game
 startButton.addEventListener('click', startGame);
 
+// Function to start the game
 function startGame() {
     gameStarted = true;
     cards.forEach(card => card.addEventListener('click', flipCard));
@@ -106,6 +108,7 @@ function startGame() {
     startTimer();
 }
 
+// Function to start the game timer
 function startTimer() {
     timerInterval = setInterval(function() {
         timeLeft--;
@@ -120,15 +123,18 @@ function startTimer() {
     }, 1000);
 }
 
+// Function to handle game over scenario
 function gameOver() {
     clearInterval(timerInterval);
     alert("Game Over, stupid human! HAHAHAHA!");
 }
 
+// Function to update the display of remaining lives
 function updateLivesDisplay() {
     livesDisplay.textContent = `Life: ${lives}`;
 }
 
+// Shuffle cards when DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
     shuffle();
 });
@@ -144,6 +150,7 @@ function disableCards() {
     resetBoard();
 }
 
+// Function called when all pairs are matched
 function gameWon() {
     clearInterval(timerInterval);
     alert('Your save the World!');

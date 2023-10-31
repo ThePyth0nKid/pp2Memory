@@ -158,4 +158,7 @@ main {
     .game-controls {
         margin-top: 770px;
     }
+    header {
+        min-height:110px;
+    }
 }
