@@ -17,8 +17,13 @@ let firstCard, secondCard;
 let gameStarted = false;
 let matchedPairs = 0;
 
-// Function to handle card flipping
-function flipCard() {
+// Function to handle card flipping with two arguments
+function flipCard(cardElement, immediateFlip) {
+    if (immediateFlip) {
+        cardElement.classList.add('flip');
+        return;
+    }
+
     // Prevent flipping if game hasn't started
     if (!gameStarted) {
         alert("Kindly press 'START' to initiate the game. Your fate awaits!");
@@ -26,17 +31,17 @@ function flipCard() {
     }
     // Ignore click if board is locked or the same card is clicked
     if (lockBoard) return;
-    if (this === firstCard) return;
+    if (cardElement === firstCard) return;
     // Add flip class to the clicked card
-    this.classList.add('flip');
+    cardElement.classList.add('flip');
     if (!hasFlippedCard) {
         // first click
         hasFlippedCard = true;
-        firstCard = this;
+        firstCard = cardElement;
         return;
     }
     // second click
-    secondCard = this;
+    secondCard = cardElement;
     checkForMatch();
 }
 
@@ -75,7 +80,7 @@ function unflipCards() {
 }
 
 // Add flip event listener to each card
-cards.forEach(card => card.addEventListener('click', flipCard));
+cards.forEach(card => card.addEventListener('click', () => flipCard(card, false)));
 
 // Function to reset the board state
 function resetBoard() {
@@ -97,12 +102,11 @@ startButton.addEventListener('click', startGame);
 // Function to start the game
 function startGame() {
     gameStarted = true;
-    cards.forEach(card => card.addEventListener('click', flipCard));
+    cards.forEach(card => card.addEventListener('click', () => flipCard(card, false)));
     clearInterval(timerInterval);
     lives = 5;
     timeLeft = 60;
     cards.forEach(card => card.classList.remove('flip'));
-    cards.forEach(card => card.addEventListener('click', flipCard));
     shuffle();
     updateLivesDisplay();
     startTimer();
@@ -153,5 +157,5 @@ function disableCards() {
 // Function called when all pairs are matched
 function gameWon() {
     clearInterval(timerInterval);
-    alert('Your save the World!');
+    alert('You save the World!');
 }
