@@ -87,7 +87,7 @@ I have used several technologies that have enabled this design to work:
   - for image creation and inspiration
 - [ChatGPT4](https://chat.openai.com/)
   - for text, inspiration and problem solving
-- [Youtube] (https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw)
+- [Youtube] (<https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw>)
   - for basic structure of the memory game
   
 ---
@@ -142,6 +142,8 @@ Use of ES6 Features: The validation process identified 26 warnings, all related 
   - The largest function contains 15 statements, implying a comprehensive implementation of a particular feature. However, the median      number of statements per function is just 2, highlighting that most functions are concise and focused.
   - The most complex function has a cyclomatic complexity value of 6, which is within a reasonable range for JavaScript functions, ensuring    maintainability and readability. The median complexity value is 1, reflecting the straightforward nature of most functions.
 
+- Conclusion
+  - The JSHint validation confirms that our JavaScript codebase for the memory card game is well-structured, adheres to modern coding standards, and maintains a balance between functionality and simplicity. Our use of ES6 features underscores our commitment to leveraging current JavaScript capabilities to create an engaging and efficient gaming experience.
 
 ---
 
@@ -149,7 +151,7 @@ Use of ES6 Features: The validation process identified 26 warnings, all related 
 
 I deployed this website by using GitPages and following the below steps:
 
-*GitHub pages deployment*
+### GitHub pages deployment
 
 1. Log in to GitHub
 2. In your Repository section, select the project repository that you want to deploy
@@ -160,7 +162,7 @@ I deployed this website by using GitPages and following the below steps:
 
 Please note it can take a while for this link to become fully active.
 
-*Forking the GitHub Repository*
+### Forking the GitHub Repository
 
 If you want to make changes to your repository without affecting it, you can make a copy of it by 'Forking' it. This ensures your original repository remains unchanged.
 
@@ -168,7 +170,7 @@ If you want to make changes to your repository without affecting it, you can mak
 2. In the top right corner of the page, click the Fork button (under your account)
 3. Your repository has now been 'Forked' and you have a copy to work on
 
-*Cloning the GitHub Repository*
+### Cloning the GitHub Repository
 
 Cloning your repository will allow you to download a local version of the repository to be worked on. Cloning can also be a great way to backup your work.
 
@@ -185,7 +187,7 @@ Cloning your repository will allow you to download a local version of the reposi
 
 The following websites/articles were used for research and guidance:
 
-- [Learn Vanilla Javascript: Memory Game Tutorial ] (https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw)
+- [Learn Vanilla Javascript: Memory Game Tutorial ] (<https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw>)
 
 - [Love Running walkthrough project, that always accompanied me on my first project] (<https://learn.codeinstitute.net>)
 
