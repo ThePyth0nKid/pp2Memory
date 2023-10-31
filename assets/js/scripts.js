@@ -8,14 +8,19 @@ let firstCard, secondCard;
 let gameStarted = false;
 let matchedPairs = 0;
 
+// Function to handle card flipping
 function flipCard() {
+    // Prevent flipping if game hasn't started
     if (!gameStarted) {
-        alert("Kindly press 'START' to initiate the game. Your fate awaits! If you're wondering why you're here, please ask the chatbot, Kia, for answers.");
+        alert("Kindly press 'START' to initiate the game. Your fate awaits!");
         return;
     }
+
+    // Ignore click if board is locked or the same card is clicked
     if (lockBoard) return;
     if (this === firstCard) return;
 
+    // Add flip class to the clicked card
     this.classList.add('flip');
 
     if (!hasFlippedCard) {
@@ -36,6 +41,7 @@ function checkForMatch() {
     isMatch ? disableCards() : unflipCards();
 }
 
+// Function to handle matched cards
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
@@ -116,7 +122,7 @@ function startTimer() {
 
 function gameOver() {
     clearInterval(timerInterval);
-    alert('Game Over, stupid human! HAHAHAHA! If you wish to learn more about the story, please ask the chatbot, Kia.');
+    alert("Game Over, stupid human! HAHAHAHA!");
 }
 
 function updateLivesDisplay() {
