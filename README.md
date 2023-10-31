@@ -87,7 +87,7 @@ I have used several technologies that have enabled this design to work:
   - for image creation and inspiration
 - [ChatGPT4](https://chat.openai.com/)
   - for text, inspiration and problem solving
-- [Youtube] (<https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw>)
+- [Youtube](<https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw>)
   - for basic structure of the memory game
   
 ---
