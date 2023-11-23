@@ -1,4 +1,3 @@
-// Select all memory cards from the DOM
 const cards = document.querySelectorAll('.memory-card');
 
 // Game control elements
@@ -17,13 +16,8 @@ let firstCard, secondCard;
 let gameStarted = false;
 let matchedPairs = 0;
 
-// Function to handle card flipping with two arguments
-function flipCard(cardElement, immediateFlip) {
-    if (immediateFlip) {
-        cardElement.classList.add('flip');
-        return;
-    }
-
+// Function to handle card flipping
+function flipCard() {
     // Prevent flipping if game hasn't started
     if (!gameStarted) {
         alert("Kindly press 'START' to initiate the game. Your fate awaits!");
@@ -31,17 +25,17 @@ function flipCard(cardElement, immediateFlip) {
     }
     // Ignore click if board is locked or the same card is clicked
     if (lockBoard) return;
-    if (cardElement === firstCard) return;
+    if (this === firstCard) return;
     // Add flip class to the clicked card
-    cardElement.classList.add('flip');
+    this.classList.add('flip');
     if (!hasFlippedCard) {
         // first click
         hasFlippedCard = true;
-        firstCard = cardElement;
+        firstCard = this;
         return;
     }
     // second click
-    secondCard = cardElement;
+    secondCard = this;
     checkForMatch();
 }
 
@@ -80,7 +74,7 @@ function unflipCards() {
 }
 
 // Add flip event listener to each card
-cards.forEach(card => card.addEventListener('click', () => flipCard(card, false)));
+cards.forEach(card => card.addEventListener('click', flipCard));
 
 // Function to reset the board state
 function resetBoard() {
@@ -102,11 +96,12 @@ startButton.addEventListener('click', startGame);
 // Function to start the game
 function startGame() {
     gameStarted = true;
-    cards.forEach(card => card.addEventListener('click', () => flipCard(card, false)));
+    cards.forEach(card => card.addEventListener('click', flipCard));
     clearInterval(timerInterval);
     lives = 5;
     timeLeft = 60;
     cards.forEach(card => card.classList.remove('flip'));
+    cards.forEach(card => card.addEventListener('click', flipCard));
     shuffle();
     updateLivesDisplay();
     startTimer();
@@ -157,5 +152,6 @@ function disableCards() {
 // Function called when all pairs are matched
 function gameWon() {
     clearInterval(timerInterval);
-    alert('You save the World!');
+    alert('Your save the World!');
 }
+
