@@ -82,6 +82,23 @@ main {
     transform: rotateY(180deg);
 }
 
+/* Styles for header h1 */
+#welcome-text {
+    margin-top: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+/* Styles for header h1 */
+#instructions-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFF;
+}
+
 /* Styles for game controls, positioned at the bottom */
 .game-controls {
     max-height: 40px;
