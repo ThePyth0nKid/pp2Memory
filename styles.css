@@ -29,14 +29,6 @@ header {
     text-align: center;
 }
 
-/* Styling for h1 images inside the header */
-h1.heading img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
-}
-
 /* Main content styling, positioned below the header */
 main {
     flex: 1 0 auto;
@@ -48,7 +40,7 @@ main {
     width: 280px;
     height: 280px;
     margin: auto;
-    margin-top: 140px;
+    margin-top: 340px;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
@@ -98,7 +90,7 @@ main {
     top: 0;
     justify-content: center;
     align-items: center;
-    margin-top: 440px;
+    margin-top: 240px;
     gap: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -159,7 +151,7 @@ main {
     }
 
     .game-controls {
-        margin-top: 770px;
+        margin-top: 270px;
     }
 
     header {
